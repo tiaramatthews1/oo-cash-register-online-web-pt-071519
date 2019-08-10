@@ -20,7 +20,7 @@ def initialize(discount = 0)
       @items << title
     end
     @total += price*quantity
-    @last_transaction = @total
+    @last_transaction = price * quantity
     @total
   end
 
